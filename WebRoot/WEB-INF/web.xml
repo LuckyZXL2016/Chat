@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>RefChat</servlet-name>
+    <servlet-class>com.zxl.web.RefChat</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChatMsg</servlet-name>
+    <servlet-class>com.zxl.web.ChatMsg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.zxl.web.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RefChat</servlet-name>
+    <url-pattern>/servlet/RefChat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChatMsg</servlet-name>
+    <url-pattern>/servlet/ChatMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
